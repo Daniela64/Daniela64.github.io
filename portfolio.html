@@ -17,15 +17,25 @@
 
 <style>
 body {
-background: #7E9674;
-color: Pink;
+background: #4A394B;
+color: #white;
+}
+
+.custom-navbar {
+  background-color: #4A394B; /* change to any hex, rgb, or color name */
+}
+.custom-navbar .nav-link {
+  color: white; /* optional: change link color */
+}
+.custom-navbar .nav-link:hover {
+  color: #ddd; /* hover effect */
 }
 </style>
 
-<nav class="navbar navbar-expand-sm bg-light">
+<nav class="navbar navbar-expand-sm custom-navbar">
   <div class="container-fluid">
     <!-- Links, aligned to the right -->
-    <ul class="navbar-nav ms-auto">
+    <ul class="navbar-nav mx-auto">
       <li class="nav-item"><a class="nav-link custom-font" href="portfolio.html">Home</a></li>
       <li class="nav-item"><a class="nav-link custom-font" href="glitch.html">Glitch</a></li>
       <li class="nav-item"><a class="nav-link custom-font" href="mash.html">Mash</a></li>
@@ -41,26 +51,26 @@ color: Pink;
 <style>
   .custom-font {
     font-family: 'Trebuchet MS';
-    font-size: 130%;
+    font-size: 150%;
   }
 </style>
 
-<h1 class="mx-auto d-block" style="font-size: 300%;">Daniela's Portfolio</h1>
-
-
-<img src="myface.jpg" class="rounded-circle" alt="face" width="400" height="400"> 
-
-<p style="font-family:Trebuchet MS;font-size:130%;">Hello, my name is Daniela Alaniz. I am a Digital Media Art major currently enrolled as a first year in San Jose State University. I am origianlly from Patterson a small town in the central valley of California. This is my hand coded portfolio that showcases the work I have currently made in my Art 74 class.</p>
+<h1 class="mx-auto d-block text-center" style="font-size: 300%; color: white;">Daniela's Portfolio</h1>
+<br>
+<img src="myface.jpg" class="rounded-circle d-block mx-auto" alt="face" width="400" height="400"> 
+<br>
+<br>
+<p class="text-center" style="font-family:Trebuchet MS;font-size:130%; color: white;">Hello, my name is Daniela Alaniz. I am a Digital Media Art major currently enrolled as a first year in San Jose State University. I am origianlly from Patterson a small town in the central valley of California. This is my hand coded portfolio that showcases the work I have currently made in my Art 74 class.</p>
 
 <style>
 a:link {
-  color: pink;
+  color: white;
   background-color: transparent;
   text-decoration: none;
 }
 
 a:visited {
-  color: pink;
+  color: white;
   background-color: transparent;
   text-decoration: none;
 }
@@ -72,7 +82,7 @@ a:hover {
 }
 
 a:active {
-  color: pink;
+  color: white;
   background-color: transparent;
   text-decoration: underline;
 }

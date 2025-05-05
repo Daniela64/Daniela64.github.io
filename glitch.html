@@ -18,15 +18,25 @@
 
 <style>
 body {
-background: #7E9674;
-color: Pink;
+background: #4A394B;
+color: #white;
+}
+
+.custom-navbar {
+  background-color: #4A394B; /* change to any hex, rgb, or color name */
+}
+.custom-navbar .nav-link {
+  color: white; /* optional: change link color */
+}
+.custom-navbar .nav-link:hover {
+  color: #ddd; /* hover effect */
 }
 </style>
 
-<nav class="navbar navbar-expand-sm bg-light">
+<nav class="navbar navbar-expand-sm custom-navbar">
   <div class="container-fluid">
     <!-- Links, aligned to the right -->
-    <ul class="navbar-nav ms-auto">
+    <ul class="navbar-nav mx-auto">
       <li class="nav-item"><a class="nav-link custom-font" href="portfolio.html">Home</a></li>
       <li class="nav-item"><a class="nav-link custom-font" href="glitch.html">Glitch</a></li>
       <li class="nav-item"><a class="nav-link custom-font" href="mash.html">Mash</a></li>
@@ -34,7 +44,7 @@ color: Pink;
       <li class="nav-item"><a class="nav-link custom-font" href="threed.html">3D Model</a></li>
       <li class="nav-item"><a class="nav-link custom-font" href="netart.html">Net.Art</a></li>
 	  <li class="nav-item"><a class="nav-link custom-font" href="clickergame.html">Game</a></li>
-	  <li class="nav-item"><a class="nav-link custom-font" href="eclipseselfie.html">Portrait</a></li>
+	   <li class="nav-item"><a class="nav-link custom-font" href="eclipseselfie.html">Portrait</a></li>
     </ul>
   </div>
 </nav>
@@ -42,49 +52,65 @@ color: Pink;
 <style>
   .custom-font {
     font-family: 'Trebuchet MS';
-    font-size: 130%;
+    font-size: 150%;
   }
 </style>
 
-<h1 style="font-size:300%;"> Glitch Art</h1>
-
-<img src="gun.jpg" alt="gun" class="mx-auto d-block" width="600" height="400">
-<br>
-<img src="police.jpg" alt="police" class="mx-auto d-block" width="600" height="400">
-<br>
-<img src="school.jpg" alt="school" class="mx-auto d-block" width="600" height="400">
+<h1 class="mx-auto d-block text-center" style="font-size: 300%; color: white;">Glitch Art</h1>
 <br>
 
+<div id="glitchCarousel" class="carousel slide mx-auto" data-bs-ride="carousel" style="max-width: 600px;">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="gun.jpg" class="d-block w-100" alt="Gun">
+    </div>
+    <div class="carousel-item">
+      <img src="police.jpg" class="d-block w-100" alt="Police">
+    </div>
+    <div class="carousel-item">
+      <img src="school.jpg" class="d-block w-100" alt="School">
+    </div>
+  </div>
 
+  <!-- Controls -->
+  <button class="carousel-control-prev" type="button" data-bs-target="#glitchCarousel" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#glitchCarousel" data-bs-slide="next">
+    <span class="carousel-control-next-icon"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
 
+<br>
 
-
-<p style="font-family:Trebuchet MS;font-size:150%;">A series of images representing the breaking down of school shootings and how gun violence breaks down schools every year across America. My series of images includes the Uvalde Robb School entrance, the gun used in the shooting, and video footage of the police inside the school.</p>
+<p class="text-center" style="font-family:Trebuchet MS;font-size:150%; color: white;">A series of images representing the breaking down of school shootings and how gun violence breaks down schools every year across America. My series of images includes the Uvalde Robb School entrance, the gun used in the shooting, and video footage of the police inside the school.</p>
 
 
 
 
 <style>
 a:link {
-  color: pink;
+  color: #403366;
   background-color: transparent;
   text-decoration: none;
 }
 
 a:visited {
-  color: pink;
+  color: #403366;
   background-color: transparent;
   text-decoration: none;
 }
 
 a:hover {
-  color: red;
+  color: white;
   background-color: transparent;
   text-decoration: underline;
 }
 
 a:active {
-  color: pink;
+  color: #403366;
   background-color: transparent;
   text-decoration: underline;
 }

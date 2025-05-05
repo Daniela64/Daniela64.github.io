@@ -19,15 +19,25 @@
 
 <style>
 body {
-background: #7E9674;
-color: Pink;
+background: #4A394B;
+color: #white;
+}
+
+.custom-navbar {
+  background-color: #4A394B; /* change to any hex, rgb, or color name */
+}
+.custom-navbar .nav-link {
+  color: white; /* optional: change link color */
+}
+.custom-navbar .nav-link:hover {
+  color: #ddd; /* hover effect */
 }
 </style>
 
-<nav class="navbar navbar-expand-sm bg-light">
+<nav class="navbar navbar-expand-sm custom-navbar">
   <div class="container-fluid">
     <!-- Links, aligned to the right -->
-    <ul class="navbar-nav ms-auto">
+    <ul class="navbar-nav mx-auto">
       <li class="nav-item"><a class="nav-link custom-font" href="portfolio.html">Home</a></li>
       <li class="nav-item"><a class="nav-link custom-font" href="glitch.html">Glitch</a></li>
       <li class="nav-item"><a class="nav-link custom-font" href="mash.html">Mash</a></li>
@@ -43,38 +53,39 @@ color: Pink;
 <style>
   .custom-font {
     font-family: 'Trebuchet MS';
-    font-size: 130%;
+    font-size: 150%;
   }
 </style>
 
-<h1 style="font-size:300%;"> Meme Mashup</h1>
+<h1 class="mx-auto d-block text-center" style="font-size: 300%; color: white;"> Meme Mashup</h1>
+<br>
+<img src="seashantyboom.jpg" alt="Sea Shanty" class="mx-auto d-block" width="385" height="385">
 
-<img src="seashantyboom.jpg" alt="Sea Shanty" class="mx-auto d-block" width="600" height="600">
+<br>
 
-
-<p style="font-family:Trebuchet MS;font-size:150%;">  A meme mashup is based on the internet meme "Pirate posting" which takes original memes and pirate-ifys them in a poorly looking fashion. This one includes the mix of the "Costco guys" a father and son duo that have become huge influencers because of their love for Costco food as well as their "Bring the Boom" song. This is a twist because the Costco guys usually give Booms as a good rating for things like food and people but when turning it into a pirate post the Booms are a play on pirate battles. I cropped out every image and added it to the Costco guys then added an extra white box to the top as well as the black text.</p>
+<p class="text-center" style="font-family:Trebuchet MS;font-size:150%; color: white;">  A meme mashup is based on the internet meme "Pirate posting" which takes original memes and pirate-ifys them in a poorly looking fashion. This one includes the mix of the "Costco guys" a father and son duo that have become huge influencers because of their love for Costco food as well as their "Bring the Boom" song. This is a twist because the Costco guys usually give Booms as a good rating for things like food and people but when turning it into a pirate post the Booms are a play on pirate battles. I cropped out every image and added it to the Costco guys then added an extra white box to the top as well as the black text.</p>
 
 <style>
 a:link {
-  color: pink;
+  color: #403366;
   background-color: transparent;
   text-decoration: none;
 }
 
 a:visited {
-  color: pink;
+  color: #403366;
   background-color: transparent;
   text-decoration: none;
 }
 
 a:hover {
-  color: red;
+  color: white;
   background-color: transparent;
   text-decoration: underline;
 }
 
 a:active {
-  color: pink;
+  color: #403366;
   background-color: transparent;
   text-decoration: underline;
 }

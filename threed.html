@@ -17,15 +17,25 @@
 
 <style>
 body {
-background: #7E9674;
-color: Pink;
+background: #4A394B;
+color: #white;
+}
+
+.custom-navbar {
+  background-color: #4A394B; /* change to any hex, rgb, or color name */
+}
+.custom-navbar .nav-link {
+  color: white; /* optional: change link color */
+}
+.custom-navbar .nav-link:hover {
+  color: #ddd; /* hover effect */
 }
 </style>
 
-<nav class="navbar navbar-expand-sm bg-light">
+<nav class="navbar navbar-expand-sm custom-navbar">
   <div class="container-fluid">
     <!-- Links, aligned to the right -->
-    <ul class="navbar-nav ms-auto">
+    <ul class="navbar-nav mx-auto">
       <li class="nav-item"><a class="nav-link custom-font" href="portfolio.html">Home</a></li>
       <li class="nav-item"><a class="nav-link custom-font" href="glitch.html">Glitch</a></li>
       <li class="nav-item"><a class="nav-link custom-font" href="mash.html">Mash</a></li>
@@ -41,43 +51,57 @@ color: Pink;
 <style>
   .custom-font {
     font-family: 'Trebuchet MS';
-    font-size: 130%;
+    font-size: 150%;
   }
 </style>
 
-<h1 style="font-size:300%;"> 3D Model</h1>
+<h1 class="mx-auto d-block text-center" style="font-size: 300%; color: white;"> 3D Model</h1>
+<br>
+<div id="beetleCarousel" class="carousel slide mx-auto" data-bs-ride="carousel" style="max-width: 400px;">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="beetleonecopy.jpg" class="d-block w-100" alt="3D Beetle Model View 1">
+    </div>
+    <div class="carousel-item">
+      <img src="beetletwocopy.jpg" class="d-block w-100" alt="3D Beetle Model View 2">
+    </div>
+  </div>
 
-<img src="beetleonecopy.jpg" alt="beetleone">
-<img src="beetletwocopy.jpg" alt="beetletwo">
-
-
-
-
-
-<p style="font-family:Trebuchet MS;font-size:150%;"> 3D Draft print of Japanese Rhinoceros Beetle
+  <!-- Optional controls -->
+  <button class="carousel-control-prev" type="button" data-bs-target="#beetleCarousel" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#beetleCarousel" data-bs-slide="next">
+    <span class="carousel-control-next-icon"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+<br>
+<p class="text-center" style="font-family:Trebuchet MS;font-size:150%; color: white;"> 3D Draft print of Japanese Rhinoceros Beetle
  </p>
 
 <style>
 a:link {
-  color: pink;
+  color: #403366;
   background-color: transparent;
   text-decoration: none;
 }
 
 a:visited {
-  color: pink;
+  color: #403366;
   background-color: transparent;
   text-decoration: none;
 }
 
 a:hover {
-  color: red;
+  color: white;
   background-color: transparent;
   text-decoration: underline;
 }
 
 a:active {
-  color: pink;
+  color: #403366;
   background-color: transparent;
   text-decoration: underline;
 }
